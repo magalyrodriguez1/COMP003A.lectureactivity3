@@ -36,11 +36,34 @@ namespace COMP003A.lectureactivity3
             }
             else
             {
-                //this code executes if the above condition is false
+                //this code block executes if the above condition is false
                 Console.WriteLine("\tinputNumber is odd.");        
             }
 
+            /**************************************************************/
+            Console.WriteLine("3. nested if statement");
+            //nested if statements
+            if (inputNumber % 2 == 0)
+            {
+                //this code block executes if inputNumber is divisible by 2 
+                Console.WriteLine("\tinputNumber is even.");
 
+                if (inputNumber % 5 == 0)
+                {
+                    //this code block executes if inputNumber is divisible by 2 first, and divisible by 5 after
+                    Console.WriteLine("\t\tinputNumber is also divisible by 5.");
+                }
+                else
+                {
+                    //this code block executes if inputNumber is divisible by 2 first but NOT divisible by 5 after
+                    Console.WriteLine("\t\tinputNumber is NOT divisible by 5.");
+                }
+            }
+            else
+            {
+                //theis code block executes if inputNumber is NOT divisible by 2
+                Console.WriteLine("\tinputNumber is odd.");
+            }
 
         }
     }
