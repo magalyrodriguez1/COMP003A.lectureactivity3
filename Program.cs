@@ -111,9 +111,35 @@ namespace COMP003A.lectureactivity3
                 + $"{inputNumber == randomNumber && inputNumber >= randomNumber}");
             Console.WriteLine($"\t{inputNumber} == {randomNumber} || {inputNumber} >= {randomNumber}: "
                 + $" {inputNumber == randomNumber || inputNumber >= randomNumber}");
-            Console.WriteLine($"\t!(true): {!(true)}");
+            Console.WriteLine($"\t! (true): {!(true)}");
 
             /**************************************************************/
+
+            Console.WriteLine("8. switch statement");
+            //switch statement
+            switch (inputNumber)
+            {
+                case 2:
+                    //this code block executes if the case condition is true
+                    Console.WriteLine("\tinputNumber is 2.");
+                    break; //the break keyword exits out of the switch
+                case 3:
+                    //this code block executes if the case condition is true
+                    Console.WriteLine("\tinputNumber is 3.");
+                    break;
+                case 5:
+                    //this code block executes if the case condition is true 
+                    Console.WriteLine("\tinputNumber is 5.");
+                    break;
+                case 7:
+                    //this code block executes if the case condition is true
+                    Console.WriteLine("\tinputNumber is 7.");
+                    break;
+                default:
+                    //this code block executes is none of the cases above is true
+                    Console.WriteLine("\tinputNumber is not 2/3/5/7.");
+                    break;
+            }
         }
     }
 }
