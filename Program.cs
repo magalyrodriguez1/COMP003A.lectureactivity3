@@ -27,6 +27,20 @@ namespace COMP003A.lectureactivity3
             }
 
             /**************************************************************/
+            Console.WriteLine("2. if-else statement");
+            //if-else statement
+            if (inputNumber % 2 == 0)
+            {
+                //this code block executes if the condition about is true
+                Console.WriteLine("\tinputNumber is even.");
+            }
+            else
+            {
+                //this code executes if the above condition is false
+                Console.WriteLine("\tinputNumber is odd.");        
+            }
+
+
 
         }
     }
